@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Chuvadi.Barcodes.Rendering</AssemblyName>
+    <RootNamespace>Chuvadi.Barcodes.Rendering</RootNamespace>
+    <Description>Renders encoded barcodes to SVG (vector) and PNG (exact integer module size).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes\Chuvadi.Barcodes.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Imaging\Chuvadi.Barcodes.Imaging.csproj" />
+  </ItemGroup>
+
+</Project>

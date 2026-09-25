@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Chuvadi.Barcodes.Encoders</AssemblyName>
+    <RootNamespace>Chuvadi.Barcodes.Encoders</RootNamespace>
+    <Description>Encoders for every supported 1D and 2D symbology (QR, Micro QR, rMQR, Data Matrix, PDF417, MicroPDF417, Aztec, MaxiCode, Code 128, Code 39, Code 93, Codabar, EAN/UPC, ITF, GS1 DataBar and more). Produces module grids and bar-width patterns.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes\Chuvadi.Barcodes.csproj" />
+  </ItemGroup>
+
+</Project>

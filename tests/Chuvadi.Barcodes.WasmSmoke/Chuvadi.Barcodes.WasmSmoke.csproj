@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.WebAssembly">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RunAOTCompilation>false</RunAOTCompilation>
+    <IsPackable>false</IsPackable>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <Description>
+      WebAssembly smoke test. References every Chuvadi Barcodes library and
+      fails the build if any of them pulls in OS-coupled APIs that do not
+      work in the browser sandbox. Not part of the solution; CI builds it
+      directly after installing the wasm-tools workload.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes\Chuvadi.Barcodes.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Encoders\Chuvadi.Barcodes.Encoders.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Decoders\Chuvadi.Barcodes.Decoders.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Imaging\Chuvadi.Barcodes.Imaging.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Rendering\Chuvadi.Barcodes.Rendering.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Payloads\Chuvadi.Barcodes.Payloads.csproj" />
+  </ItemGroup>
+</Project>

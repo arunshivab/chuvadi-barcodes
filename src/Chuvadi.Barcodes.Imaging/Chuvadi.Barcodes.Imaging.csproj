@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Chuvadi.Barcodes.Imaging</AssemblyName>
+    <RootNamespace>Chuvadi.Barcodes.Imaging</RootNamespace>
+    <Description>Pure managed image readers and writers used by Chuvadi Barcodes: PNG, JPEG, BMP, GIF, TIFF and PNM. Independent of barcode logic.</Description>
+  </PropertyGroup>
+
+</Project>
