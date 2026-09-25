@@ -6,6 +6,7 @@
 | Date | 2026-09-25 |
 | Owner | Arun Shiva B |
 | Depends on | [00 — Project idea](00-project-idea.md) |
+| Amended by | D-010 — `Encoding`/`Decoding` projects renamed to `Encoders`/`Decoders` (see [02 — M1](02-m1-scaffold.md)) |
 
 All type and member names in this document are **proposed**. Nothing exists in code yet.
 Names will be finalised in the milestone design notes (02, 03, …) and recorded in the

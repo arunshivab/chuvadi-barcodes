@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Chuvadi.Barcodes.Payloads</AssemblyName>
+    <RootNamespace>Chuvadi.Barcodes.Payloads</RootNamespace>
+    <Description>Typed builders and parsers for barcode payloads: URL, vCard, MeCard, Wi-Fi, SMS, email, geo, calendar, UPI, EMVCo merchant QR, GS1 element strings and Digital Link, GST e-invoice QR and Aadhaar Secure QR.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes\Chuvadi.Barcodes.csproj" />
+  </ItemGroup>
+
+</Project>

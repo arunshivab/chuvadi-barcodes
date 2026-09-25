@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/examples/">
+    <Project Path="examples/Chuvadi.Barcodes.Cli/Chuvadi.Barcodes.Cli.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Chuvadi.Barcodes/Chuvadi.Barcodes.csproj" />
+    <Project Path="src/Chuvadi.Barcodes.Decoders/Chuvadi.Barcodes.Decoders.csproj" />
+    <Project Path="src/Chuvadi.Barcodes.Encoders/Chuvadi.Barcodes.Encoders.csproj" />
+    <Project Path="src/Chuvadi.Barcodes.Imaging/Chuvadi.Barcodes.Imaging.csproj" />
+    <Project Path="src/Chuvadi.Barcodes.Payloads/Chuvadi.Barcodes.Payloads.csproj" />
+    <Project Path="src/Chuvadi.Barcodes.Rendering/Chuvadi.Barcodes.Rendering.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Chuvadi.Barcodes.Conformance.Tests/Chuvadi.Barcodes.Conformance.Tests.csproj" />
+    <Project Path="tests/Chuvadi.Barcodes.Decoders.Tests/Chuvadi.Barcodes.Decoders.Tests.csproj" />
+    <Project Path="tests/Chuvadi.Barcodes.Encoders.Tests/Chuvadi.Barcodes.Encoders.Tests.csproj" />
+    <Project Path="tests/Chuvadi.Barcodes.Imaging.Tests/Chuvadi.Barcodes.Imaging.Tests.csproj" />
+    <Project Path="tests/Chuvadi.Barcodes.Payloads.Tests/Chuvadi.Barcodes.Payloads.Tests.csproj" />
+    <Project Path="tests/Chuvadi.Barcodes.Rendering.Tests/Chuvadi.Barcodes.Rendering.Tests.csproj" />
+    <Project Path="tests/Chuvadi.Barcodes.Tests/Chuvadi.Barcodes.Tests.csproj" />
+  </Folder>
+</Solution>

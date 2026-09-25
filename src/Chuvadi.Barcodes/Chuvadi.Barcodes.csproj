@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Chuvadi.Barcodes</AssemblyName>
+    <RootNamespace>Chuvadi.Barcodes</RootNamespace>
+    <Description>Core types for Chuvadi Barcodes: barcode formats, bit containers (BitArray, BitMatrix), Reed-Solomon and BCH error correction, check digits, ECI and character-set tables, GS1 Application Identifiers, pixel/luminance buffers and decode results. Zero dependencies.</Description>
+  </PropertyGroup>
+
+</Project>

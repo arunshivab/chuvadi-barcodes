@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Chuvadi.Barcodes.Cli</RootNamespace>
+    <AssemblyName>chuvadi-barcodes</AssemblyName>
+    <IsPackable>false</IsPackable>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <Description>Command-line tool to encode and decode barcodes with Chuvadi Barcodes (used for visual verification).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes\Chuvadi.Barcodes.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Encoders\Chuvadi.Barcodes.Encoders.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Decoders\Chuvadi.Barcodes.Decoders.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Imaging\Chuvadi.Barcodes.Imaging.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Rendering\Chuvadi.Barcodes.Rendering.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Payloads\Chuvadi.Barcodes.Payloads.csproj" />
+  </ItemGroup>
+
+</Project>

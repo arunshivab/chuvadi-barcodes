@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Chuvadi.Barcodes.Decoders</AssemblyName>
+    <RootNamespace>Chuvadi.Barcodes.Decoders</RootNamespace>
+    <Description>Decoders for every supported 1D and 2D symbology: binarisation, detection, perspective correction, sampling, error correction and data decoding, from clean images to scans and camera photos.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes\Chuvadi.Barcodes.csproj" />
+  </ItemGroup>
+
+</Project>
