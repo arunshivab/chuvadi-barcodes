@@ -14,10 +14,17 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="FluentAssertions" />
     <PackageReference Include="FsCheck.Xunit" />
+    <!-- Test oracle only (D-016). -->
+    <PackageReference Include="ZXing.Net" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Encoders\Chuvadi.Barcodes.Encoders.csproj" />
+    <ProjectReference Include="..\..\src\Chuvadi.Barcodes.Rendering\Chuvadi.Barcodes.Rendering.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Fixtures\**\*.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

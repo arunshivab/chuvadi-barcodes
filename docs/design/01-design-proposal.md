@@ -6,7 +6,7 @@
 | Date | 2026-09-25 |
 | Owner | Arun Shiva B |
 | Depends on | [00 — Project idea](00-project-idea.md) |
-| Amended by | D-010 — `Encoding`/`Decoding` projects renamed to `Encoders`/`Decoders` (see [02 — M1](02-m1-scaffold.md)) |
+| Amended by | D-010 — `Encoding`/`Decoding` projects renamed to `Encoders`/`Decoders` (see [02 — M1](02-m1-scaffold.md)); D-013 — all §3.4 candidates in v1; D-014/D-016 — no ISO specs, test oracles instead; D-015 — M2 split into M2a–M2d (see [03 — M2a](03-m2a-core-qr.md)); D-019 — `BitBuffer` instead of `BitArray` |
 
 All type and member names in this document are **proposed**. Nothing exists in code yet.
 Names will be finalised in the milestone design notes (02, 03, …) and recorded in the

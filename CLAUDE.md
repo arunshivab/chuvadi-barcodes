@@ -13,6 +13,7 @@ Pure managed .NET 10 barcode and QR code library: encode and decode every major 
 PROJECT:   Chuvadi.Barcodes
 STACK:     C# (.NET 10, LangVersion latest)
 SOLUTION:  Chuvadi.Barcodes.slnx (6 src + 7 test + 1 example; WasmSmoke built separately)
+FIXTURES:  python3 tools/gen_zint_fixtures.py   (needs zint on PATH; not needed by CI)
 DEPS:      Zero in src/. xUnit + FluentAssertions + FsCheck in tests/.
 REPO:      github.com/arunshivab/chuvadi-barcodes (public)
 LOCAL:     C:\Users\aruns\Documents\Chuvadi\chuvadi-barcodes\
@@ -54,7 +55,15 @@ PACK:      .\build\pack.ps1 -Version x.y.z
 Do not guess at APIs, types, or signatures of any external code. Confirm from source
 or ask. For standards (ISO/IEC, AIM, GS1), cite the clause or test vector used.
 
-## 5. Documentation
+## 5. Test oracles (D-016)
+
+Zint and ZXing.Net are for **testing only**. Never reference them from `src/`, never copy
+their code or tables into `src/`. Golden fixtures come from `tools/gen_zint_fixtures.py`
+(Zint 2.13.0) and are committed; ZXing.Net is a test-project package only. Every new
+encoder needs Zint fixtures (module-for-module) and, where ZXing supports the symbology,
+round-trip tests.
+
+## 6. Documentation
 
 Every step is documented in `docs/`. Every decision gets a D-entry in
 `docs/design/DECISIONS.md`. Each milestone gets a design note in `docs/design/`.

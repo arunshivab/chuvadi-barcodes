@@ -16,11 +16,12 @@ goes out of date; it is superseded by a later document and the decision log says
 |---|----------|--------|
 | 00 | [Project idea](design/00-project-idea.md) | Accepted |
 | 01 | [Design proposal](design/01-design-proposal.md) | Draft — for review |
-| 02 | [Milestone M1: scaffold and CI](design/02-m1-scaffold.md) | Implemented — in review |
+| 02 | [Milestone M1: scaffold and CI](design/02-m1-scaffold.md) | Merged |
+| 03 | [Milestone M2a: core, QR family encoders, rendering](design/03-m2a-core-qr.md) | Implemented — in review |
 | — | [Decision log](design/DECISIONS.md) | Living document |
 
 Later design notes (one per milestone — encoders, imaging, decoders, payloads) will be
-added as `03-…`, `04-…` and so on.
+added as `04-…`, `05-…` and so on.
 
 ## API reference
 
