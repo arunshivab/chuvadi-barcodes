@@ -28,6 +28,9 @@
 
     <!-- Benchmarking: for performance regression tests -->
     <PackageVersion Include="BenchmarkDotNet" Version="0.14.0" />
+    <!-- TEST ORACLE ONLY (D-016): independent decoder used by test projects to verify our
+         encoders. Never referenced from src/. Apache-2.0. -->
+    <PackageVersion Include="ZXing.Net" Version="0.16.11" />
   </ItemGroup>
 
 </Project>

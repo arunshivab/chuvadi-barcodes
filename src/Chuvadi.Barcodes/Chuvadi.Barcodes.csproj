@@ -3,7 +3,18 @@
   <PropertyGroup>
     <AssemblyName>Chuvadi.Barcodes</AssemblyName>
     <RootNamespace>Chuvadi.Barcodes</RootNamespace>
-    <Description>Core types for Chuvadi Barcodes: barcode formats, bit containers (BitArray, BitMatrix), Reed-Solomon and BCH error correction, check digits, ECI and character-set tables, GS1 Application Identifiers, pixel/luminance buffers and decode results. Zero dependencies.</Description>
+    <Description>Core types for Chuvadi Barcodes: barcode formats, bit containers (BitBuffer, BitMatrix), Reed-Solomon error correction, ECI character-set tables, luminance images and shared enums. Zero dependencies.</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Encoders" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Decoders" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Rendering" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Payloads" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Tests" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Encoders.Tests" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Decoders.Tests" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Conformance.Tests" />
+  </ItemGroup>
 
 </Project>

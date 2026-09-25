@@ -1,24 +1,17 @@
 // Copyright 2026 Chuvadi Contributors
 // SPDX-License-Identifier: Apache-2.0
-// PHASE: M1 — WASM smoke test. Grows into encode -> render -> decode in M2/M4.
+// PHASE: M2a — WASM smoke test: encode QR and Micro QR, render SVG and PNG in the browser sandbox.
 
 using System;
-using System.Reflection;
+using Chuvadi.Barcodes.Encoders;
+using Chuvadi.Barcodes.Rendering;
 
-string[] libraries =
-[
-    "Chuvadi.Barcodes",
-    "Chuvadi.Barcodes.Encoders",
-    "Chuvadi.Barcodes.Decoders",
-    "Chuvadi.Barcodes.Imaging",
-    "Chuvadi.Barcodes.Rendering",
-    "Chuvadi.Barcodes.Payloads",
-];
+QrSymbol qr = QrEncoder.Encode("Chuvadi Barcodes on WebAssembly");
+string svg = SvgRenderer.Render(qr.Matrix);
+byte[] png = PngRenderer.Render(qr.Matrix);
+Console.WriteLine($"QR version {qr.Version}: SVG {svg.Length} chars, PNG {png.Length} bytes");
 
-foreach (string library in libraries)
-{
-    Assembly assembly = Assembly.Load(library);
-    Console.WriteLine($"Loaded {assembly.GetName().Name}");
-}
+QrSymbol micro = MicroQrEncoder.Encode("WASM 1");
+Console.WriteLine($"Micro QR M{micro.Version}: {micro.Matrix.Width}x{micro.Matrix.Height}");
 
 return 0;

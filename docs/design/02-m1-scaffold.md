@@ -2,7 +2,7 @@
 
 | Field | Value |
 |-------|-------|
-| Status | Implemented — in review |
+| Status | Merged (PR #2) |
 | Date | 2026-09-25 |
 | Depends on | [01 — Design proposal](01-design-proposal.md) |
 

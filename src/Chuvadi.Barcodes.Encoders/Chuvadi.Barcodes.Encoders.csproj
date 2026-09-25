@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Encoders.Tests" />
+    <InternalsVisibleTo Include="Chuvadi.Barcodes.Conformance.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src\Chuvadi.Barcodes\Chuvadi.Barcodes.csproj" />
   </ItemGroup>
 
